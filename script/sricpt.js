@@ -1,41 +1,29 @@
-const multipleItemCarousel = document.querySelector('#carouselBerita')
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
 
-
-if(window.matchMedia("(min-width:576px").matches){
-
-    const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-        interval: false
-
-    })
-
-
-    var carouselWidth = $('.berita')[0].scrollWidth;
-    var cardWidth = $('.isi-berita').width();
-
-    var scrollPosition = 0; 
-
-    $('.tombol-next').on('click', function(){
-    if(scrollPosition < (carouselWidth - (cardWidth*4))){
-            console.log('next'); 
-            scrollPosition = scrollPosition + cardWidth;
-            $('.berita').animate({scrollLeft: scrollPosition},600)
-    }
-    }); 
-
-    $('.tombol-prev').on('click', function(){
-        if(scrollPosition > 0){
-            console.log('prev'); 
-            scrollPosition = scrollPosition - cardWidth;
-            $('.berita').animate({scrollLeft: scrollPosition},600)
-        }
-    }); 
-    
-}else{
-
-    $(multipleItemCarousel).addClass('slide');
-    
-}
-
-
-
-
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
