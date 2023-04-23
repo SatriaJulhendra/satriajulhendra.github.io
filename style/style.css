@@ -41,12 +41,17 @@ nav {
 .dropdown:hover > .dropdown-menu,
 .dropend:hover > .dropdown-menu {
   display: block;
+  background-color: #073c64;
 }
 
-.dropend:hover > .dropdown-menu {
-  position: absolute;
-  top: 0;
-  left: 100%;
+.dropdown-item{
+  color: #fff !important  ;
+}
+
+.dropdown-menu  :hover, 
+.dropdown-item :hover {
+  color: #fdcb2c !important  ;
+  background-color: #073c64 !important;
 }
 
 .navbar-brand {
@@ -229,13 +234,14 @@ nav {
   cursor: pointer;
 }
 
-.terkini .isi .next-btn h5 {
+.terkini .isi .next-btn a {
   font-weight: bold;
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 0;
   color: white;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .title-wrapper {
@@ -351,6 +357,8 @@ nav {
     border-color: white ;
     position: absolute;
     bottom: 30px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 
@@ -397,10 +405,17 @@ nav {
 }
 
 @media screen and (min-width: 576px) {
+
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  
+  }
+
 }
 
-@media screen and (max-width: 576px) {
-}
+
 
 /* fix */
 footer {
