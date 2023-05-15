@@ -134,11 +134,154 @@ nav {
 /* sampai sini */
 
 
+.hero{
+  width: 100%;
+  height: 440px;
+  background-image: url(...);
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.hero h1{
+
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+
+.share-box{
+  list-style-type: none;
+}
 
 
 
+.facebook{
+  background-color: #4E71A8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.twitter{
+  background-color: #1CB7EB;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.whatsapp{
+  background-color: #0DC143;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  text-decoration: none;
+}
 
 
+i{
+  font-size: 25px !important;
+  color: white;
+}
+
+
+.isi h2{
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.isi .horizontal-line{
+  width: 100%;
+  height: 3px;
+  background-color: #fdcb2c;
+  margin-bottom: 20px;
+}
+
+
+.isi p{
+  text-align: justify;
+  font-size: 14px;
+}
+
+
+.left-side{
+  margin-top: 47px !important;
+}
+
+
+.left-side h4{
+  font-size: 20px;
+}
+
+.link-terkait ul{
+
+  list-style-type: none;
+}
+
+.link-terkait li{
+  margin-bottom: 8px;
+  border-bottom: 1px solid #fdcb2c;
+  opacity: 80%;
+}
+
+.link-terkait ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #212529;
+}
+
+
+.link-terkait ul li a:hover{
+  color: #073c64;
+}
+
+.close-line{
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin-top: 50px;
+  opacity: 25%;
+
+}
+
+.bawah{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px !important;
+}
+
+
+.bawah .facebook {
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+
+.bawah .twitter{
+  margin-top: 0;
+  margin-right: 10px;
+}
+
+.bawah .whatsapp{
+  margin-top: 0;
+}
 
   @media screen and (min-width: 576px) {
 
@@ -149,6 +292,12 @@ nav {
     
     }
   
+  }
+
+
+  @media screen and (max-width: 576px){
+
+    
   }
 
 
