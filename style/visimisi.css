@@ -137,8 +137,9 @@ nav {
 .hero{
   width: 100%;
   height: 440px;
-  background-image: url(...);
-  background-color: gray;
+  background-image: url(/assets/bannerweb.png);
+  background-position: center;
+  background-size:cover;
   display: flex;
   justify-content: center;
   align-items: center; 
