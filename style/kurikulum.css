@@ -220,6 +220,13 @@ i{
   font-size: 14px;
 }
 
+.isi a{
+  text-decoration: none;
+  color: #fdcb2c;
+  margin-top: 30px;
+  
+}
+
 
 .left-side{
   margin-top: 47px !important;
