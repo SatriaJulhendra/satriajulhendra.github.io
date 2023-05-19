@@ -177,11 +177,9 @@ nav {
 .carousel-item img {
   height: 320px;
   width: 100%;
-  border-radius: 40px;
 }
 
 .judul-content {
-  margin-left: 40px;
   margin-top: 40px;
 }
 
@@ -192,8 +190,8 @@ nav {
 }
 
 .judul-content .horizontal-line {
-  width: 600px;
-  height: 3px;
+  width: 100%;
+  height: 2px;
   background-color: #fdcb2c;
 }
 
@@ -207,7 +205,6 @@ nav {
 }
 
 .terkini img {
-  width: 512px;
   height: 320px;
 }
 
@@ -273,7 +270,7 @@ nav {
   height: 3px;
   background: #fdcb2c;
   display: block;
-  width: 300px;
+  width: 110px;
 }
 
 .slide-wrapper {
@@ -309,7 +306,7 @@ nav {
 
 .card-content{
     height: 218px;
-    width: 328px;
+    width: 280px;
 }
 
 .image-content,
@@ -411,6 +408,8 @@ nav {
   .swiper-navBtn {
     display: none;
   }
+
+  
 }
 
 @media screen and (min-width: 576px) {
@@ -421,6 +420,40 @@ nav {
     left: 100%;
   
   }
+
+  .carousel-item img {
+    border-radius: 40px;
+  }
+
+  .card-content{
+    height: 218px;
+    width: 328px;
+  }
+
+  .subtitle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    color: #1a2c43;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .subtitle::after,
+  .subtitle::before {
+    content: "";
+    height: 3px;
+    background: #fdcb2c;
+    display: block;
+    width: 300px;
+  }
+
+  .terkini img {
+    width: 512px;
+    height: 320px;
+  }
+  
+  
 
 }
 
