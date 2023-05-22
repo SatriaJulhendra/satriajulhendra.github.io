@@ -11,6 +11,11 @@ nav {
   border-bottom: 2px solid #1a2c43;
 }
 
+a{
+  text-decoration: none !important;
+  
+}
+
 .top-nav {
   background-color: white;
   height: 40px;
@@ -223,6 +228,8 @@ nav {
   font-size: 22px;
   font-weight: bold;
   margin-top: 20px;
+  cursor: pointer;
+  color:#333;
 }
 
 .terkini .isi p {
