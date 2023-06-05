@@ -200,10 +200,7 @@ a{
   background-color: #fdcb2c;
 }
 
-.content-wrapper {
-  width: 1200px;
-  padding-top: 40px;
-}
+
 
 .terkini {
   margin-bottom: 70px;
@@ -416,8 +413,24 @@ a{
     display: none;
   }
 
-  
 }
+
+
+@media screen and (min-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+
+  .content-wrapper {
+    width: 1200px;
+    padding-top: 40px;
+  }
+
+}
+
 
 @media screen and (min-width: 576px) {
 
@@ -431,6 +444,8 @@ a{
   .carousel-item img {
     border-radius: 40px;
   }
+
+ 
 
   .card-content{
     height: 218px;
